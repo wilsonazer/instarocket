@@ -7,6 +7,10 @@ module.exports = {
 
     },
     async store(req, res ){
-        res.json({ message: 'let´s code man!' })
+        const{ name, hastags}  =  req.body
+        res.json( {
+            name,
+            hastags
+        })
     }
 }
