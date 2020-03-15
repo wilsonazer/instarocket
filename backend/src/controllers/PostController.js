@@ -8,9 +8,17 @@ module.exports = {
     },
     async store(req, res ){
         const{ name, hastags}  =  req.body
+        
         res.json( {
             name,
             hastags
         })
+    },
+    async update( req, res ){
+
+    },
+    
+    async delete ( req, res){
+        
     }
 }
